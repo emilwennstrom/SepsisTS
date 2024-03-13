@@ -120,10 +120,10 @@ def collate_fn(batch):
 
 '''Converts features to tensors. Last column is target'''
 class TimeseriesTorchDF(object):
-    def __init__(self, dataframe, feature_columns):
+    def __init__(self, dataframe):
         self.dataframe = dataframe
-        self.feature_columns = feature_columns[:-1]
-        self.target_column = feature_columns[-1]
+        self.feature_columns = dataframe.columns[:-1]
+        self.target_column = dataframe.columns[-1]
         
     def load_series(self):
         features = torch.tensor(self.dataframe[self.feature_columns].values, dtype=torch.float)
