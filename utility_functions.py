@@ -6,6 +6,9 @@ from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence
 import torch
 
+#these classes and functions are not really used
+
+#not used
 class TimeseriesTorch(object):
     def __init__(self, path, num_features):
         self.train = self.load_series(os.path.join(path, 'train.dat'), num_features)
@@ -42,6 +45,7 @@ class TimeseriesTorch(object):
                 pos += 1
         return [steps,targets]
 
+#not used
 class TimeseriesNumPy(object):
     def __init__(self, path, num_features):
         self.train = self.load_series(os.path.join(path, 'train.dat'), num_features)
@@ -82,7 +86,7 @@ class TimeseriesNumPy(object):
     
 
 
-
+#not used. 
 class VariableLengthTimeSeriesDataset(Dataset):
     def __init__(self, dataframe, exclude_columns, target_column):
         self.dataframe = dataframe
@@ -109,6 +113,7 @@ class VariableLengthTimeSeriesDataset(Dataset):
         return features_tensor, target_tensor
 
 
+#not used
 def collate_fn(batch):
     # Separate features and targets, and pad features
     features, targets = zip(*batch)
@@ -118,6 +123,7 @@ def collate_fn(batch):
     return features_padded, targets_tensor
 
 
+#not used
 '''Converts features to tensors. Last column is target'''
 class TimeseriesTorchDF(object):
     def __init__(self, dataframe):
