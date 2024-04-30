@@ -12,7 +12,7 @@ Please read the linked papers for more information.
 <br>
 
 We tested the accuracy of the model for each time interval, as well as the minimal set of features needed to predict. 
-We defined our own architecture, and we used optimizers, dropout and early stopping and cross fold validation. 
+We defined our own architecture, and we used optimizers, dropout and early stopping and cross fold validation. The notebook is Sepsis_notebook.ipynb
 <br>
 <br> <br> <br> <br>
 Citation:
