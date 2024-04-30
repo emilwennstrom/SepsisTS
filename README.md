@@ -5,8 +5,8 @@ with unspecific symptoms and markers, making it hard to predict and manage clini
 
 
 <br>
-We implemented an LSTM and used <a href=https://www.cl.uni-heidelberg.de/statnlpgroup/sepsisexp/#data>SepsisExp</a> dataset to predict the onset of Sepsis 2 hours, 
-4 hours and 6 hours in advance. The data is a set of laboratory measurements, per patient, per time interval. 
+Me and <a href=https://github.com/emilwennstrom>Emil Wennström</a> used <a href=https://www.cl.uni-heidelberg.de/statnlpgroup/sepsisexp/#data>SepsisExp</a> dataset to predict the onset of Sepsis 2 hours, 
+4 hours and 6 hours in advance, by implementing an LSTM. The data is a set of laboratory measurements, per patient, per time interval. 
 Please read the linked papers for more information. 
 
 <br>
